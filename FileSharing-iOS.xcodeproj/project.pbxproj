@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E9C7957C29A6A92D002C20C5 /* FileSharing_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */; };
-		E9C7957E29A6A92D002C20C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7957D29A6A92D002C20C5 /* ContentView.swift */; };
 		E9C7958029A6A92E002C20C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7957F29A6A92E002C20C5 /* Assets.xcassets */; };
 		E9C7958329A6A92E002C20C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7958229A6A92E002C20C5 /* Preview Assets.xcassets */; };
 		E9C7958B29A6AB2A002C20C5 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E9C7958A29A6AB2A002C20C5 /* Realm */; };
 		E9C7958D29A6AB2A002C20C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E9C7958C29A6AB2A002C20C5 /* RealmSwift */; };
 		E9C7959029A6AB8C002C20C5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E9C7958F29A6AB8C002C20C5 /* FirebaseStorage */; };
+		E9C7959629A6AD65002C20C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7959529A6AD65002C20C5 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9C7957829A6A92D002C20C5 /* FileSharing-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FileSharing-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSharing_iOSApp.swift; sourceTree = "<group>"; };
-		E9C7957D29A6A92D002C20C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9C7957F29A6A92E002C20C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C7958229A6A92E002C20C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9C7959529A6AD65002C20C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 		E9C7957A29A6A92D002C20C5 /* FileSharing-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E9C7959329A6AD26002C20C5 /* Views */,
 				E9C7959129A6AC1B002C20C5 /* Model */,
 				E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */,
-				E9C7957D29A6A92D002C20C5 /* ContentView.swift */,
 				E9C7957F29A6A92E002C20C5 /* Assets.xcassets */,
 				E9C7958129A6A92E002C20C5 /* Preview Content */,
 			);
@@ -79,6 +79,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9C7959329A6AD26002C20C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7959429A6AD36002C20C5 /* Components */,
+				E9C7959529A6AD65002C20C5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9C7959429A6AD36002C20C5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C7957E29A6A92D002C20C5 /* ContentView.swift in Sources */,
 				E9C7957C29A6A92D002C20C5 /* FileSharing_iOSApp.swift in Sources */,
+				E9C7959629A6AD65002C20C5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
