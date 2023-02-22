@@ -11,6 +11,9 @@
 		E9C7957E29A6A92D002C20C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7957D29A6A92D002C20C5 /* ContentView.swift */; };
 		E9C7958029A6A92E002C20C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7957F29A6A92E002C20C5 /* Assets.xcassets */; };
 		E9C7958329A6A92E002C20C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7958229A6A92E002C20C5 /* Preview Assets.xcassets */; };
+		E9C7958B29A6AB2A002C20C5 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E9C7958A29A6AB2A002C20C5 /* Realm */; };
+		E9C7958D29A6AB2A002C20C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E9C7958C29A6AB2A002C20C5 /* RealmSwift */; };
+		E9C7959029A6AB8C002C20C5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E9C7958F29A6AB8C002C20C5 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7958D29A6AB2A002C20C5 /* RealmSwift in Frameworks */,
+				E9C7958B29A6AB2A002C20C5 /* Realm in Frameworks */,
+				E9C7959029A6AB8C002C20C5 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = "FileSharing-iOS";
+			packageProductDependencies = (
+				E9C7958A29A6AB2A002C20C5 /* Realm */,
+				E9C7958C29A6AB2A002C20C5 /* RealmSwift */,
+				E9C7958F29A6AB8C002C20C5 /* FirebaseStorage */,
+			);
 			productName = "FileSharing-iOS";
 			productReference = E9C7957829A6A92D002C20C5 /* FileSharing-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = E9C7956F29A6A92D002C20C5;
+			packageReferences = (
+				E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				E9C7958E29A6AB8C002C20C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E9C7957929A6A92D002C20C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +354,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.33.0;
+			};
+		};
+		E9C7958E29A6AB8C002C20C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9C7958A29A6AB2A002C20C5 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E9C7958C29A6AB2A002C20C5 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		E9C7958F29A6AB8C002C20C5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C7958E29A6AB8C002C20C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9C7957029A6A92D002C20C5 /* Project object */;
 }
