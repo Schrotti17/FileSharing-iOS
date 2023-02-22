@@ -57,6 +57,7 @@
 		E9C7957A29A6A92D002C20C5 /* FileSharing-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E9C7959129A6AC1B002C20C5 /* Model */,
 				E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */,
 				E9C7957D29A6A92D002C20C5 /* ContentView.swift */,
 				E9C7957F29A6A92E002C20C5 /* Assets.xcassets */,
@@ -71,6 +72,13 @@
 				E9C7958229A6A92E002C20C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9C7959129A6AC1B002C20C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
