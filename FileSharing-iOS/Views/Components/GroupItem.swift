@@ -23,9 +23,6 @@ struct GroupItem: View {
                 .overlay(Circle().stroke(Color.blue, lineWidth: 1.5))
                 .shadow(radius: 10)
             Text("\(group.groupName)")
-            Image(systemName: "trash.fill")
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                .listRowInsets(EdgeInsets())
         }
     }
 }

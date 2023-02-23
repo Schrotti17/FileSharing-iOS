@@ -20,6 +20,7 @@
 		E95D0A1129A76A5700254026 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0F29A76A5700254026 /* Group.swift */; };
 		E95D0A1329A76A6400254026 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A1229A76A6400254026 /* AppUser.swift */; };
 		E95D0A1529A76B5800254026 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E95D0A1429A76B5800254026 /* GoogleService-Info.plist */; };
+		E95D0A1929A7CEC900254026 /* GroupFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A1829A7CEC900254026 /* GroupFiles.swift */; };
 		E9C7957C29A6A92D002C20C5 /* FileSharing_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */; };
 		E9C7958029A6A92E002C20C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7957F29A6A92E002C20C5 /* Assets.xcassets */; };
 		E9C7958329A6A92E002C20C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7958229A6A92E002C20C5 /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		E95D0A0F29A76A5700254026 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		E95D0A1229A76A6400254026 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		E95D0A1429A76B5800254026 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E95D0A1829A7CEC900254026 /* GroupFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFiles.swift; sourceTree = "<group>"; };
 		E9C7957829A6A92D002C20C5 /* FileSharing-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FileSharing-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSharing_iOSApp.swift; sourceTree = "<group>"; };
 		E9C7957F29A6A92E002C20C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				E95D09FD29A769FC00254026 /* LoginView.swift */,
 				E95D0A0129A769FC00254026 /* OpenRealmView.swift */,
 				E9C7959529A6AD65002C20C5 /* ContentView.swift */,
+				E95D0A1829A7CEC900254026 /* GroupFiles.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				E95D0A1329A76A6400254026 /* AppUser.swift in Sources */,
 				E95D0A0229A769FC00254026 /* FilesView.swift in Sources */,
+				E95D0A1929A7CEC900254026 /* GroupFiles.swift in Sources */,
 				E95D0A0429A769FC00254026 /* GroupView.swift in Sources */,
 				E95D0A0729A769FC00254026 /* OpenRealmView.swift in Sources */,
 				E95D0A0D29A76A2200254026 /* FileItem.swift in Sources */,

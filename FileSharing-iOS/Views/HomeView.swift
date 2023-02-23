@@ -14,7 +14,7 @@ struct HomeView: View {
     @ObservedResults(AppUser.self) var user
     var body: some View {
         TabView {
-            GroupView()
+            GroupView(userMail: user[0].email)
                 .tabItem(){
                     Image(systemName: "person.3.fill")
                     Text("Groups")

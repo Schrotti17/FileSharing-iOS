@@ -1,29 +1,34 @@
 //
-//  FilesView.swift
+//  GroupFiles.swift
 //  FileSharing-iOS
 //
-//  Created by mm507d1 on 2/4/23.
+//  Created by mm507d1 on 2/23/23.
 //
 
-import Foundation
 import SwiftUI
+import Foundation
 import RealmSwift
 
+struct GroupFiles: View {
 
-struct FilesView: View {
-
+    let groupId: String
     @ObservedResults(Item.self) var items
-    
-    var body: some View {
-        NavigationView{
-            List{
-                ForEach(items){ item in
-                    FileItem(item: item)
-                }.onDelete(perform: removeItem)
-                }.navigationBarTitle("Items")
-            }
+
+    var groupItems: [Item] {
+        print("\(groupId)")
+        var itemsList = [Item]()
+        itemsList.append(contentsOf: items.filter("%@ IN owner", "\(groupId)"))
+        return itemsList
     }
-    
+
+    var body: some View {
+        List{
+            ForEach(groupItems){ item in
+                FileItem(item: item)
+            }.onDelete(perform: removeItem)
+        }.navigationBarTitle("Items")
+    }
+
     func removeItem(at offsets: IndexSet){
         let location = offsets.map { $items.wrappedValue[$0].location }[0]
         let desertRef = storageRef.child("\(location)")

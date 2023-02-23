@@ -15,7 +15,6 @@ struct FileItem: View {
         HStack{
             Image(systemName: "photo.fill")
             Text("\(item.location)")
-            Image(systemName: "square.and.arrow.up.fill")
         }
     }
 }

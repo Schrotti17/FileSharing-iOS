@@ -12,16 +12,21 @@ import RealmSwift
 struct GroupView: View {
 
     @ObservedResults(Group.self) var groups
+    @ObservedResults(Item.self) var items
+    let userMail: String
     var groupMembers: [Group] {
         var groupsList = [Group]()
-        groupsList.append(contentsOf: groups.filter("%@ IN users", "thom.stahl.04@gmail.com"))
+        groupsList.append(contentsOf: groups.filter("%@ IN users", userMail))
         return groupsList
     }
+    
     var body: some View {
         NavigationView{
             List{
                 ForEach(groupMembers){ group in
-                    GroupItem(group: group)
+                    NavigationLink(destination: GroupFiles(groupId: group.idString)){
+                        GroupItem(group: group)
+                    }
                 }
             }.navigationBarTitle("Groups")
         }
