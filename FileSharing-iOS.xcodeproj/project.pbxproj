@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E95D0A0229A769FC00254026 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FC29A769FC00254026 /* FilesView.swift */; };
+		E95D0A0329A769FC00254026 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FD29A769FC00254026 /* LoginView.swift */; };
+		E95D0A0429A769FC00254026 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FE29A769FC00254026 /* GroupView.swift */; };
+		E95D0A0529A769FC00254026 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FF29A769FC00254026 /* ErrorView.swift */; };
+		E95D0A0629A769FC00254026 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0029A769FC00254026 /* HomeView.swift */; };
+		E95D0A0729A769FC00254026 /* OpenRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0129A769FC00254026 /* OpenRealmView.swift */; };
+		E95D0A0929A76A1500254026 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0829A76A1500254026 /* AccountView.swift */; };
+		E95D0A0C29A76A2200254026 /* GroupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0A29A76A2200254026 /* GroupItem.swift */; };
+		E95D0A0D29A76A2200254026 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0B29A76A2200254026 /* FileItem.swift */; };
+		E95D0A1029A76A5700254026 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0E29A76A5700254026 /* Item.swift */; };
+		E95D0A1129A76A5700254026 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A0F29A76A5700254026 /* Group.swift */; };
+		E95D0A1329A76A6400254026 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0A1229A76A6400254026 /* AppUser.swift */; };
+		E95D0A1529A76B5800254026 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E95D0A1429A76B5800254026 /* GoogleService-Info.plist */; };
 		E9C7957C29A6A92D002C20C5 /* FileSharing_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */; };
 		E9C7958029A6A92E002C20C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7957F29A6A92E002C20C5 /* Assets.xcassets */; };
 		E9C7958329A6A92E002C20C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7958229A6A92E002C20C5 /* Preview Assets.xcassets */; };
@@ -17,6 +30,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E95D09FC29A769FC00254026 /* FilesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		E95D09FD29A769FC00254026 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E95D09FE29A769FC00254026 /* GroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		E95D09FF29A769FC00254026 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E95D0A0029A769FC00254026 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E95D0A0129A769FC00254026 /* OpenRealmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenRealmView.swift; sourceTree = "<group>"; };
+		E95D0A0829A76A1500254026 /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E95D0A0A29A76A2200254026 /* GroupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupItem.swift; sourceTree = "<group>"; };
+		E95D0A0B29A76A2200254026 /* FileItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
+		E95D0A0E29A76A5700254026 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E95D0A0F29A76A5700254026 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		E95D0A1229A76A6400254026 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		E95D0A1429A76B5800254026 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9C7957829A6A92D002C20C5 /* FileSharing-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FileSharing-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSharing_iOSApp.swift; sourceTree = "<group>"; };
 		E9C7957F29A6A92E002C20C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +86,7 @@
 				E9C7959329A6AD26002C20C5 /* Views */,
 				E9C7959129A6AC1B002C20C5 /* Model */,
 				E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */,
+				E95D0A1429A76B5800254026 /* GoogleService-Info.plist */,
 				E9C7957F29A6A92E002C20C5 /* Assets.xcassets */,
 				E9C7958129A6A92E002C20C5 /* Preview Content */,
 			);
@@ -77,6 +104,9 @@
 		E9C7959129A6AC1B002C20C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E95D0A1229A76A6400254026 /* AppUser.swift */,
+				E95D0A0F29A76A5700254026 /* Group.swift */,
+				E95D0A0E29A76A5700254026 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +115,13 @@
 			isa = PBXGroup;
 			children = (
 				E9C7959429A6AD36002C20C5 /* Components */,
+				E95D0A0829A76A1500254026 /* AccountView.swift */,
+				E95D09FF29A769FC00254026 /* ErrorView.swift */,
+				E95D09FC29A769FC00254026 /* FilesView.swift */,
+				E95D09FE29A769FC00254026 /* GroupView.swift */,
+				E95D0A0029A769FC00254026 /* HomeView.swift */,
+				E95D09FD29A769FC00254026 /* LoginView.swift */,
+				E95D0A0129A769FC00254026 /* OpenRealmView.swift */,
 				E9C7959529A6AD65002C20C5 /* ContentView.swift */,
 			);
 			path = Views;
@@ -93,6 +130,8 @@
 		E9C7959429A6AD36002C20C5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E95D0A0B29A76A2200254026 /* FileItem.swift */,
+				E95D0A0A29A76A2200254026 /* GroupItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -166,6 +205,7 @@
 			files = (
 				E9C7958329A6A92E002C20C5 /* Preview Assets.xcassets in Resources */,
 				E9C7958029A6A92E002C20C5 /* Assets.xcassets in Resources */,
+				E95D0A1529A76B5800254026 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95D0A1329A76A6400254026 /* AppUser.swift in Sources */,
+				E95D0A0229A769FC00254026 /* FilesView.swift in Sources */,
+				E95D0A0429A769FC00254026 /* GroupView.swift in Sources */,
+				E95D0A0729A769FC00254026 /* OpenRealmView.swift in Sources */,
+				E95D0A0D29A76A2200254026 /* FileItem.swift in Sources */,
+				E95D0A1029A76A5700254026 /* Item.swift in Sources */,
+				E95D0A0929A76A1500254026 /* AccountView.swift in Sources */,
+				E95D0A1129A76A5700254026 /* Group.swift in Sources */,
 				E9C7957C29A6A92D002C20C5 /* FileSharing_iOSApp.swift in Sources */,
+				E95D0A0C29A76A2200254026 /* GroupItem.swift in Sources */,
+				E95D0A0529A769FC00254026 /* ErrorView.swift in Sources */,
+				E95D0A0629A769FC00254026 /* HomeView.swift in Sources */,
+				E95D0A0329A769FC00254026 /* LoginView.swift in Sources */,
 				E9C7959629A6AD65002C20C5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
