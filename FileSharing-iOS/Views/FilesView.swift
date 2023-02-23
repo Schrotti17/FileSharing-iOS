@@ -16,12 +16,18 @@ struct FilesView: View {
     
     var body: some View {
         NavigationView{
-            List{
-                ForEach(items){ item in
-                    FileItem(item: item)
-                }
-                .onDelete(perform: removeItem)
-            }.navigationBarTitle("Items")
+            HStack{
+                List{
+                    ForEach(items){ item in
+                        FileItem(item: item)
+                    }
+                    .onDelete(perform: removeItem)
+                }.navigationBarTitle("Items")
+                Button(action: sendItem label: {
+                    Image(systemName: "pencil")
+                })
+            }
+            
         }
         
         
@@ -37,5 +43,10 @@ struct FilesView: View {
               $items.remove(atOffsets: offsets)
             }
         }
+    }
+
+
+    func sendItem(at offsets: IndexSet){
+
     }
 }
