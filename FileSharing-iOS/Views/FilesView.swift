@@ -27,8 +27,8 @@ struct FilesView: View {
         
     }
     func removeItem(at offsets: IndexSet){
-        let desertRef = storageRef.child("images/1986368399")
-
+        let location = offsets.map { $items.wrappedValue[$0].location }[0]
+        let desertRef = storageRef.child("\(location)")
         // Delete the file
         desertRef.delete { error in
           if let error = error {

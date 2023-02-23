@@ -38,3 +38,4 @@ struct FileSharing_iOS_App: SwiftUI.App {
             ContentView(app: app)
         }
     }
+}

@@ -83,8 +83,8 @@
 		E9C7957A29A6A92D002C20C5 /* FileSharing-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E9C7959329A6AD26002C20C5 /* Views */,
 				E9C7959129A6AC1B002C20C5 /* Model */,
+				E9C7959329A6AD26002C20C5 /* Views */,
 				E9C7957B29A6A92D002C20C5 /* FileSharing_iOSApp.swift */,
 				E95D0A1429A76B5800254026 /* GoogleService-Info.plist */,
 				E9C7957F29A6A92E002C20C5 /* Assets.xcassets */,
@@ -360,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FileSharing-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = MFD7GAR8DS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -388,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FileSharing-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = MFD7GAR8DS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
