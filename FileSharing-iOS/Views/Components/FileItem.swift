@@ -12,9 +12,12 @@ struct FileItem: View {
     
     @ObservedRealmObject var item: Item
     var body: some View {
+    
         HStack{
-            Image(systemName: "photo.fill")
-            Text("\(item.location)")
+            NavigationLink(destination: FileSharing()){
+                Image(systemName: "photo.fill")
+                Text("\(item.location)")
+            }
         }
     }
 }
