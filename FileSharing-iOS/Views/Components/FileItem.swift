@@ -14,7 +14,7 @@ struct FileItem: View {
     var body: some View {
     
         HStack{
-            NavigationLink(destination: FileSharing()){
+            NavigationLink(destination: FileSharing(item.location)){
                 Image(systemName: "photo.fill")
                 Text("\(item.location)")
             }
