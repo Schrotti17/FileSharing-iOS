@@ -7,42 +7,47 @@
 
 import SwiftUI
 import Foundation
-import RealmSwift
+import SDWebImageSwiftUI
 
 
-struct Picture: Transferable {
-    static var transferRepresentation: some TransferRepresentation {
-        ProxyRepresentation(exporting: \.image)
-    }
-    public var image: Image
-}
+//struct Loader: UIViewRepresentable{
+  //  func makeUIView(context: UIViewRepresentableContext<Loader>) -> UIActivityIndicatorView {
+    //    let indicator = UIActivityIndicatorView(style: .medium)
+      //  indicator.startAnimating()
+        //return indicator
+    //}
+    
+    //func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<Loader>) {
+        
+    //}
+//}
 
 struct FileSharing: View {
     
-    private let location: String
-    private let image: UIImage
-    private let imgRef = storageRef.child("\(location)")
-    imgRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
-        if let error = error {
-            // Uh-oh, an error occurred!
-        } else {
-            // Data for "images/island.jpg" is returned
-            image = UIImage(data: data!)
-        }
-    }
-
-    private let imgToShare = Picture(image: Image(image))
+    let location: String
+    @State var url = ""
     
     
     var body: some View {
-        VStack {
-            Text("\(location)")
-            Image(image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-
-            ShareLink(item: imgToShare, preview: SharePreview("\(location)", image: imgToShare.image))
-        }    
+        ZStack{
+            VStack {
+                Text("\(location)")
+                if url != ""{
+                    AsyncImage(url: URL(string: url)!, scale: 15).frame(width: 250, height: 250).padding()
+                } else {
+                    //Loader()
+                }}
+            .onAppear{
+                let storage = storageRef.child("\(location)").downloadURL{(url, err) in
+                    if err != nil {
+                        return
+                    }
+                    self.url = "\(url!)"
+                }
+            }
+        }
+        
+        //ShareLink(item: imgToShare, preview: SharePreview("\(location)", image: imgToShare.image))
     }
 }
+    

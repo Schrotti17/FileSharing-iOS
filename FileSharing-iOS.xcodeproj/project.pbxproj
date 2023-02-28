@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA6D02029AE7B15002CBCB7 /* FileSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6D01F29AE7B15002CBCB7 /* FileSharing.swift */; };
+		BEA6D02329AE7B6C002CBCB7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BEA6D02229AE7B6C002CBCB7 /* SDWebImageSwiftUI */; };
 		E95D0A0229A769FC00254026 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FC29A769FC00254026 /* FilesView.swift */; };
 		E95D0A0329A769FC00254026 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FD29A769FC00254026 /* LoginView.swift */; };
 		E95D0A0429A769FC00254026 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D09FE29A769FC00254026 /* GroupView.swift */; };
@@ -31,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEA6D01F29AE7B15002CBCB7 /* FileSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSharing.swift; sourceTree = "<group>"; };
 		E95D09FC29A769FC00254026 /* FilesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
 		E95D09FD29A769FC00254026 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E95D09FE29A769FC00254026 /* GroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA6D02329AE7B6C002CBCB7 /* SDWebImageSwiftUI in Frameworks */,
 				E9C7958D29A6AB2A002C20C5 /* RealmSwift in Frameworks */,
 				E9C7958B29A6AB2A002C20C5 /* Realm in Frameworks */,
 				E9C7959029A6AB8C002C20C5 /* FirebaseStorage in Frameworks */,
@@ -116,6 +120,7 @@
 		E9C7959329A6AD26002C20C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BEA6D01F29AE7B15002CBCB7 /* FileSharing.swift */,
 				E9C7959429A6AD36002C20C5 /* Components */,
 				E95D0A0829A76A1500254026 /* AccountView.swift */,
 				E95D09FF29A769FC00254026 /* ErrorView.swift */,
@@ -159,6 +164,7 @@
 				E9C7958A29A6AB2A002C20C5 /* Realm */,
 				E9C7958C29A6AB2A002C20C5 /* RealmSwift */,
 				E9C7958F29A6AB8C002C20C5 /* FirebaseStorage */,
+				BEA6D02229AE7B6C002CBCB7 /* SDWebImageSwiftUI */,
 			);
 			productName = "FileSharing-iOS";
 			productReference = E9C7957829A6A92D002C20C5 /* FileSharing-iOS.app */;
@@ -191,6 +197,7 @@
 			packageReferences = (
 				E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				E9C7958E29A6AB8C002C20C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BEA6D02129AE7B6C002CBCB7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = E9C7957929A6A92D002C20C5 /* Products */;
 			projectDirPath = "";
@@ -227,6 +234,7 @@
 				E95D0A0D29A76A2200254026 /* FileItem.swift in Sources */,
 				E95D0A1029A76A5700254026 /* Item.swift in Sources */,
 				E95D0A0929A76A1500254026 /* AccountView.swift in Sources */,
+				BEA6D02029AE7B15002CBCB7 /* FileSharing.swift in Sources */,
 				E95D0A1129A76A5700254026 /* Group.swift in Sources */,
 				E9C7957C29A6A92D002C20C5 /* FileSharing_iOSApp.swift in Sources */,
 				E95D0A0C29A76A2200254026 /* GroupItem.swift in Sources */,
@@ -372,6 +380,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +410,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BEA6D02129AE7B6C002CBCB7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -457,6 +475,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BEA6D02229AE7B6C002CBCB7 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEA6D02129AE7B6C002CBCB7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		E9C7958A29A6AB2A002C20C5 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E9C7958929A6AB2A002C20C5 /* XCRemoteSwiftPackageReference "realm-swift" */;
